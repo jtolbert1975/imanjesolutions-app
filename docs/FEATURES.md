@@ -17,5 +17,6 @@ $env:ENABLE_GPT5_MINI = 'true'; npm run dev
 ```
 
 Notes:
+
 - Server holds model selection logic and should call your LLM provider using server-side API keys.
 - Do not expose API keys or provider logic to the client.
