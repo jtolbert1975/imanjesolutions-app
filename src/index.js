@@ -2,12 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import { FeatureConfigProvider } from './FeatureConfigContext';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <FeatureConfigProvider>
+      <App />
+    </FeatureConfigProvider>
   </React.StrictMode>
 );
 
