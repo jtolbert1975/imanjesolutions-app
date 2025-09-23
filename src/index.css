@@ -1,3 +1,7 @@
+:root {
+  --bs-body-bg: #021126 !important; /* Replace with your desired background color */
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
