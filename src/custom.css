@@ -1,0 +1,12 @@
+      :root {
+      --bs-primary: #021126; /* Primary color */
+      --bs-secondary: #D9D9D9; /* Secondary color */
+        --bs-body-bg: #021126; /* Body background color */
+        --bs-body-color: #FFFFFF; /* Body text color */
+        --bs-light: #4AFCF9; /* Light color */
+        --bs-dark: #05204E; /* Dark color */
+        --bs-info: #4AFCF9; /* Info color */
+        --bs-success: #28a745; /* Success color */
+        --bs-warning: #ffc107; /* Warning color */
+        --bs-danger: #c41e1e; /* Danger color */
+    }
