@@ -3,6 +3,7 @@ import './App.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { useState } from 'react';
+import { FadeInItem } from './services/utils';
 
 
 function App() {
@@ -73,33 +74,33 @@ function App() {
             <img src="/images/search-engine-optimization-sml.webp" alt="SEO Services" className='card-img' />
             <h2 className="card-title">Search Engine Optimization (SEO)</h2>
             <ul className="card-list">
-              <li><span className="card-list-item">Keyword Research</span></li>
-              <li><span className="card-list-item">On-Page Optimization</span></li>
-              <li><span className="card-list-item">Link Building</span></li>
-              <li><span className="card-list-item">Content Strategy</span></li>
-              <li><span className="card-list-item">Technical SEO</span></li>
+              <FadeInItem delay={0.1}><li><span className="card-list-item">Keyword Research</span></li></FadeInItem>
+              <FadeInItem delay={0.2}><li><span className="card-list-item">On-Page Optimization</span></li></FadeInItem>
+              <FadeInItem delay={0.3}><li><span className="card-list-item">Link Building</span></li></FadeInItem>
+              <FadeInItem delay={0.4}><li><span className="card-list-item">Content Strategy</span></li></FadeInItem>
+              <FadeInItem delay={0.5}><li><span className="card-list-item">Technical SEO</span></li></FadeInItem>
             </ul>
           </div>
           <div className="card-home card-2">
             <img src="/images/laptop-computer-icons-sm.webp" alt="Web Development Services" className='card-img' />
             <h2 className="card-title">Custom Web Design and Development</h2>
             <ul className="card-list">
-              <li><span className="card-list-item">Custom Website Design</span></li>
-              <li><span className="card-list-item">E-commerce Solutions</span></li>
-              <li><span className="card-list-item">Content Management Systems (CMS)</span></li>
-              <li><span className="card-list-item">Responsive Design</span></li>
-              <li><span className="card-list-item">Website Maintenance</span></li>
+              <FadeInItem delay={0.1}><li><span className="card-list-item">Custom Website Design</span></li></FadeInItem>
+              <FadeInItem delay={0.2}><li><span className="card-list-item">E-commerce Solutions</span></li></FadeInItem>
+              <FadeInItem delay={0.3}><li><span className="card-list-item">Content Management Systems (CMS)</span></li></FadeInItem>
+              <FadeInItem delay={0.4}><li><span className="card-list-item">Responsive Design</span></li></FadeInItem>
+              <FadeInItem delay={0.5}><li><span className="card-list-item">Website Maintenance</span></li></FadeInItem>
             </ul>
           </div>
           <div className="card-home card-3">
             <img src="/images/social-media-marketing-sm.webp" alt="Digital Marketing Services" className='card-img' />
             <h2 className="card-title">Digital Marketing</h2>
             <ul className="card-list">
-              <li><span className="card-list-item">Social Media Management</span></li>
-              <li><span className="card-list-item">Email Marketing</span></li>
-              <li><span className="card-list-item">Pay-Per-Click (PPC) Advertising</span></li>
-              <li><span className="card-list-item">Content Marketing</span></li>
-              <li><span className="card-list-item">Analytics and Reporting</span></li>
+              <FadeInItem delay={0.1}><li><span className="card-list-item">Social Media Management</span></li></FadeInItem>
+              <FadeInItem delay={0.2}><li><span className="card-list-item">Email Marketing</span></li></FadeInItem>
+              <FadeInItem delay={0.3}><li><span className="card-list-item">Pay-Per-Click (PPC) Advertising</span></li></FadeInItem>
+              <FadeInItem delay={0.4}><li><span className="card-list-item">Content Marketing</span></li></FadeInItem>
+              <FadeInItem delay={0.5}><li><span className="card-list-item">Analytics and Reporting</span></li></FadeInItem>
             </ul>
           </div>
         </section>
