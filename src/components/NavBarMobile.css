@@ -1,0 +1,36 @@
+
+
+@media screen and (max-width: 600px) {
+  .navbar-container {
+    position: relative;
+    z-index: 10;
+    height: 50px;
+    top: 0rem !important;
+    left: 0.5rem !important;
+    color: #ffffff;
+    background-color: #61dafb;
+    padding: 5px;
+  }
+ 
+
+.navbar-toggler{
+  position: relative;
+    top: -5px;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #61dafb;
+}
+
+  .navbar-collapse{
+    background-color: #021126;
+    position: relative;
+    top: 0px;
+    left: 2rem;
+    z-index: 100;
+    font-size: .75em;
+    width: 90px;
+  }
+    
+}

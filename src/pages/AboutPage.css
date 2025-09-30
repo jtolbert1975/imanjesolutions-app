@@ -1,0 +1,8 @@
+.about-container{
+    margin: 2rem auto;
+    max-width: 800px;
+    font-family: 'Roboto Flex', sans-serif;
+    color: #05204E;
+    line-height: 1.6;
+    background-color: #4AFCF9;
+}

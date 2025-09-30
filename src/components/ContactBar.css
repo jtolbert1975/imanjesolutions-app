@@ -1,0 +1,116 @@
+.contact-bar{
+
+  background-color:#D9D9D9;
+  height:40px;
+  display:flex;
+  flex-flow: row nowrap;
+  align-items:center;
+  justify-content:flex-start;
+  color:#05204E;
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 500;
+  font-size:20px;
+  padding:0 20px;
+  position:relative;
+  right:0;
+}
+
+.phone-info{
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+}
+
+.email-info{
+    margin-left: 3rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 266px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for smartphones */
+    .App{
+        padding: 0 10px;
+    }
+    
+    .desktop-menu{
+        display: none;
+    }
+     .navbar-container{
+        top: 0rem;
+        left: 0rem;
+        color: #ffffff;
+        background-color: #61dafb;
+        padding: 5px;
+    }
+    
+    .app-title-container {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    } 
+    
+    .phone-number{
+        display: none;
+    }
+    .email-address{
+        display: none;
+    }
+    
+    .contact-bar{
+        justify-content: center;
+        height: 50px;
+    }
+    
+    .navbar-container {
+    position: relative;
+    z-index: 10;
+    height: 50px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Styles for tablets */
+  .app-title-container {
+    margin-left: 1rem;
+    width: 60%;
+  } 
+  .mobile-menu{
+    display: none;
+  }
+
+ /*  .phone-number{
+    display: none;
+  }
+  .email-address{
+    display: none;
+  } */
+
+  .contact-bar{
+    justify-content: center;
+  }
+
+  .App-header{
+    height: 180px;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+  .App-logo{
+     height: 70vmin;
+     position: relative;
+     top: 23px;
+     left: .5rem;
+  }
+
+  .app-logo-container {
+    position: relative;
+    width: 274px;
+    height: 146px;
+  }
+}
+}

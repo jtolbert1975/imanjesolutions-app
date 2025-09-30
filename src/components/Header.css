@@ -1,0 +1,136 @@
+.App-header {
+  background-color:#05204E;
+  height: 159px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative;
+  top: 0px;
+}
+
+.app-logo-container{
+      position: absolute;
+    width: 274px;
+    height: 146px;
+    background: #D9D9D9;
+    border: 1px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.App-logo {
+    height: 50vmin;
+    pointer-events: none;
+    position: relative;
+    top: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.app-title-container{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top:4px;
+    margin-left: 26rem;
+    text-align: left;
+    width: 33%;
+    max-width: 400px;
+}
+.app-title{
+  /* Imanje Solutions */
+position: absolute;
+top: 0px;
+height: 41px;
+font-family: 'Bilbo Swash Caps';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 80px;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 0px 4px 4px #4AFCF9;
+}
+
+.app-subtitle{
+  /* Innovative IT Solutions for Modern Businesses */
+  font-size: 1em;
+  font-family: 'Bilbo Swash Caps';
+  margin-left: 3rem;
+  margin-top: 2rem;
+  line-height: 40px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px #4AFCF9;
+  text-align: center;
+
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Styles for smartphones */
+  .App-header{
+    flex-direction: column;
+    height: 200px;
+    padding: 10px 0;
+    justify-content: center;
+  }
+  .App-logo{
+     height: 88vmin;
+     position: relative;
+     top: 26px;
+     left: .5rem;
+  }
+
+  .app-logo-container {
+    position: relative;
+    width: 294px;
+    height: 178px;
+    margin-bottom: 10px;
+    top: 0;
+  }
+  .app-title-container{
+    display: none;
+  }
+    .app-subtitle{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Styles for tablets */
+    .App-header{
+    height: 180px;
+    padding: 10px 0;
+    justify-content: center;
+  }
+
+   .App-logo{
+     height: 70vmin;
+     position: relative;
+     top: 23px;
+     left: .5rem;
+  }
+
+  .app-logo-container {
+    position: relative;
+    width: 274px;
+    height: 146px;
+    top: 0;
+    margin-bottom: 10px;
+  }
+
+   .app-title-container {
+    margin-left: 1rem;
+    width: 60%;
+  }
+}

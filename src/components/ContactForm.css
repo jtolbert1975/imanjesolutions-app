@@ -1,0 +1,69 @@
+/* Standard */
+.form-control::placeholder {
+   color: #d9d9d9 !important;
+  font-style: italic;
+}
+
+/* Chrome, Safari, Edge */
+.form-control::-webkit-input-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Firefox */
+.form-control::-moz-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Internet Explorer 10–11 */
+.form-control:-ms-input-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Microsoft Edge (legacy) */
+.form-control::-ms-input-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Base styling */
+textarea.form-control::placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Chrome, Safari, Edge */
+textarea.form-control::-webkit-input-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Firefox */
+textarea.form-control::-moz-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* IE 10–11 */
+textarea.form-control:-ms-input-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+/* Edge Legacy */
+textarea.form-control::-ms-input-placeholder {
+  color: #d9d9d9;
+  font-style: italic;
+}
+.submit-button {
+    background-color: #05204E !important;
+    color: #d9d9d9 !important;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
