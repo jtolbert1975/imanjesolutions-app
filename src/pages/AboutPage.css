@@ -5,4 +5,37 @@
     color: #05204E;
     line-height: 1.6;
     background-color: #4AFCF9;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+     min-height: 100vh;
+      padding-top: 60px; /* Adjust based on ContactBar height */
+
+
 }
+.about-container h1{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.team-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
+  width: 315px;
+  height: 178px;
+  border-radius: 8px;
+}
+

@@ -2,7 +2,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';    
-import teamImage from '../images/team.jpeg';
 import './AboutPage.css';
 
 function AboutPage() {
@@ -29,8 +28,10 @@ function AboutPage() {
                         Join us on our journey to transform businesses through technology and make a positive impact in the communities we serve.
                     </p>
                 </Col>
-                <Col md={6}>
-                    <img src={teamImage} alt="Our Team" className="img-fluid" />
+                <Col md={6} className='d-flex justify-content-center'>
+                    <div className='image-wrapper'>
+                        <img src="/images/team.jpeg" alt="Our Team" className="team-image" />
+                    </div>
                 </Col>
             </Row>
         </Container>
