@@ -33,7 +33,6 @@ function App() {
             </Routes>
             
         </main>
-    </div>
         <footer className="App-footer">
           <div className="App-footer-content">
             <p>
@@ -42,6 +41,8 @@ function App() {
           </div>
         </footer>
       </div>
+    </div>
+        
     </HelmetProvider>
   );
 }

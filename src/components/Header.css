@@ -22,7 +22,7 @@
     justify-content: center;
 }
 .App-logo {
-    height: 50vmin;
+    height: clamp(64px, 88vmin, 320px);
     pointer-events: none;
     position: relative;
     top: 23px;
@@ -70,13 +70,13 @@ text-shadow: 0px 4px 4px #4AFCF9;
 
 }
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     /* Styles for smartphones */
   .App-header{
     flex-direction: column;
@@ -85,10 +85,10 @@ text-shadow: 0px 4px 4px #4AFCF9;
     justify-content: center;
   }
   .App-logo{
-     height: 88vmin;
+     height: clamp(64px, 80vmin, 320px);
      position: relative;
      top: 26px;
-     left: .5rem;
+     left: 0.5rem;
   }
 
   .app-logo-container {
@@ -106,7 +106,7 @@ text-shadow: 0px 4px 4px #4AFCF9;
     }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     /* Styles for tablets */
     .App-header{
     height: 180px;
