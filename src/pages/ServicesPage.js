@@ -34,12 +34,13 @@ function ServicesPage() {
     ];
 
     return (
+        <div className="services-page-wrapper">
         <Container className='services-container'>
             <Helmet>
                 <title>Services - Imanje Solutions</title>
                 <meta name="description" content="Explore our services offered at Imanje Solutions." />
             </Helmet>
-            <Row>
+            <Row className="gy-0">
                 {services.map((service, index) => (
                     <Col key={index} md={4}>
                         <Card>
@@ -61,6 +62,7 @@ function ServicesPage() {
                 ))}
             </Row>
         </Container>
+        </div>
     );
 }
 

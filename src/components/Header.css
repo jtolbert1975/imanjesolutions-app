@@ -111,11 +111,12 @@ text-shadow: 0px 4px 4px #4AFCF9;
     .App-header{
     height: 180px;
     padding: 10px 0;
-    justify-content: center;
+   
   }
 
    .App-logo{
-     height: 70vmin;
+     height: clamp(12rem, 36vmin, 24rem);
+     max-width: 279px;
      position: relative;
      top: 23px;
      left: .5rem;
@@ -132,5 +133,51 @@ text-shadow: 0px 4px 4px #4AFCF9;
    .app-title-container {
     margin-left: 1rem;
     width: 60%;
+  }
+
+  .app-subtitle{
+    font-size: .9em;
+    margin-left: 0;
+    margin-top: 4rem;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+    /* Styles for laptops and desktops */
+  .App-header{
+    height: 176px;
+    padding: 0.5rem;
+  }
+
+  .App-logo{
+     height: clamp(64px, 88vmin, 297px);
+     position: relative;
+     top: 23px;
+     left: .5rem;
+  }
+
+  .app-title{
+    top: -28px;
+  }
+
+  .app-logo-container {
+    position: relative;
+    width: 274px;
+    height: 146px;
+    top: 0;
+    margin-bottom: 10px;
+  }
+
+  .app-title-container {
+    margin-left: 1rem;
+    width: 60%;
+  }
+
+  .app-subtitle{
+    font-size: 1em;
+    margin-left: 0rem;
+    margin-top: 2rem;
+    line-height: 40px;
   }
 }

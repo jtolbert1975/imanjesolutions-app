@@ -16,6 +16,7 @@ function HomePage() {
       <section id="capabilities" className="app-section section-capabilities">
         <h2 className="capabilities-header">What We Can Do For You</h2>
         <p className="capabilities-text">We offer a wide range of IT services to meet your business needs, including software development, mobile app development, and IT consulting.</p>
+       <div className="capabilities-card-container">
         <div className="card-home card-1">
           <img src="/images/search-engine-optimization-sml.webp" alt="SEO Services" className='card-img' />
           <h2 className="card-title">Search Engine Optimization (SEO)</h2>
@@ -49,7 +50,8 @@ function HomePage() {
             <FadeInItem delay={0.5}><li><span className="card-list-item">Analytics and Reporting</span></li></FadeInItem>
           </ul>
         </div>
-        <div> <a href="tel:+14702612528"><button className='get-started-button'>Get Started</button></a></div>
+        </div>
+        <div className='get-started-button-container'> <a href="tel:+14702612528"><button className='get-started-button'>Get Started</button></a></div>
       </section>
       <section id="philosophy" className="app-section section-philosophy">
         <h2>Our Philosophy</h2>
@@ -69,8 +71,11 @@ function HomePage() {
       </section>
       <section id="blog-posts" className="app-section section-blog-posts">
         <h2>Latest Blog Posts</h2>
+        <div className="blog-card-container">
         <div className="blog-card">
-          <img src="/images/minimal-logo-design-item-sm.webp" alt="Logo Design" className='blog-img' />
+          <div className="blog-image-wrapper">
+            <img src="/images/minimal-logo-design-item-sm.webp" alt="Logo Design" className='blog-img' />
+          </div>
           <h4>Why Do All Websites Look the Same?</h4>
           <p className="blog-subtitle">Imanje Solutions Wants to Break the Mold</p>
           <div className="blog-post-container">
@@ -85,7 +90,9 @@ function HomePage() {
           <a href="/blog/post-slug"><button className='read-more-button'>Read More</button></a>
         </div>
         <div className="blog-card post-two">
-          <img src="/images/different_cultures-sm.webp" alt="Designing for Different Cultures" className='blog-img' />
+          <div className="blog-image-wrapper">
+            <img src="/images/different_cultures-sm.webp" alt="Designing for Different Cultures" className='blog-img' />
+          </div>
           <h4>Designing for Different Cultures:</h4>
           <p className="blog-subtitle">Challenges, Tips, and the Role of AI</p>
           <div className="blog-post-container">
@@ -101,7 +108,9 @@ function HomePage() {
           <a href="/blog/post-slug"><button className='read-more-button'>Read More</button></a>
         </div>
         <div className="blog-card post-three">
-          <img src="/images/developers_on_a_couch.webp" alt="Skills AI Can't Replace" className='blog-img' />
+          <div className="blog-image-wrapper">
+            <img src="/images/developers_on_a_couch.webp" alt="Skills AI Can't Replace" className='blog-img' />
+          </div>
           <h4>5 Skills AI Can't Replace</h4>
           <p className="blog-subtitle">And How To Double Down on Them</p>
           <div className="blog-post-container">
@@ -114,6 +123,7 @@ function HomePage() {
           </div>
             
           <a href="/blog/post-slug"><button className='read-more-button'>Read More</button></a>
+        </div>
         </div>
       </section>
     </div>

@@ -24,7 +24,8 @@ function PortfolioPage() {
   ];
 
   return (
-    <Container>
+    <div className="portfolio-page-wrapper">
+    <Container className="portfolio-container">
       <Helmet>
         <title>Portfolio - Imanje Solutions</title>
         <meta name="description" content="Explore our portfolio of projects." />
@@ -43,6 +44,7 @@ function PortfolioPage() {
         ))}
       </Row>
     </Container>
+    </div>
   );
 }
 

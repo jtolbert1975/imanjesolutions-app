@@ -70,3 +70,95 @@
     min-height: 100vh;
     padding: 2rem;
 }
+
+@media only screen and (min-width: 981px) {
+  .services-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .services-container {
+    flex-grow: 1;
+  }
+
+  .services-container .container{
+    max-height: 960px;
+  }
+
+  .services-container .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .services-container .card{
+    max-height: 400px;
+    height: 100%;
+  }
+
+  .card-img-top {
+    width: 100%;
+    max-width: 269px;
+    max-height: 269px;
+    /* object-fit: cover; */
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+}
+
+.image-wrapper {
+  max-height: 186px; /* or whatever fits your layout */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-wrapper img{
+  max-height: 244px;
+  width: 269px;
+  height: 244px;
+}
+
+.services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  /* .services-container .card {
+ display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 379px;
+  width: 296px;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #05204e;
+  }
+  
+  .button-wrapper {
+    margin-top: 2rem;
+  } */
+
+  .services-container .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* ensures full height inside the column */
+}
+
+.services-container .card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.services-container .button-wrapper {
+  margin-top: auto;
+}
+}

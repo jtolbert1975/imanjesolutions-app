@@ -61,3 +61,29 @@
 }
   
 }
+
+@media (min-width: 981px) {
+  .about-container .row {
+    flex-direction: column;
+  }
+
+  .about-container .col-md-6 {
+    width: 100% !important;
+    max-width: none;
+    margin-bottom: 2rem;
+  }
+
+  .about-container .image-wrapper {
+    text-align: center;
+    max-width: 500px;
+    height: 500px;
+    max-height: 500px;
+  }
+
+  .team-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    max-height: 500px;
+  }
+}
