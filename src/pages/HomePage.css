@@ -275,11 +275,14 @@ section-blog-posts{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.25em;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   transition: background-color 0.3s ease;
   max-width: 260px;
+  text-decoration: none;
+  font-family: 'Roboto Flex', sans-serif;
+  width: 100vw;
 }
 
 .section-capabilities{
@@ -300,6 +303,13 @@ section-blog-posts{
 
 .blog-subtitle{
   font-size: 1em;
+}
+.section-blog-posts{
+  padding: 20px 10px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 
 }

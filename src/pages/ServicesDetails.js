@@ -1,5 +1,5 @@
 //SerivcesDetails.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Helmet } from 'react-helmet-async';
@@ -10,9 +10,15 @@ import useImageSlideIn from '../animations/useImageSlideIn';
 
 
 function ServicesDetails() {
+   const headerHeight = document.querySelector('.App-header')?.offsetHeight || 0; 
+   useEffect(() => {
+       setTimeout(() => {
+           window.scrollTo({ top: 0, behavior: 'auto' });
+       }, 50); // adjust delay if needed
+   }, []);
+   
     const { id } = useParams();
     const loaded = useImageSlideIn();
-
 
     const serviceDetails = {
         0: {
@@ -23,7 +29,7 @@ function ServicesDetails() {
         1: {
             title: 'Mobile App Development',
             description: 'Imanje Solutions builds intuitive, scalable mobile apps tailored to your business goals. We blend elegant design with robust functionality to deliver seamless user experiences across platforms—empowering growth, engagement, and long-term success.',
-            image: '../images/mobile-app-dev-illustration.webp',
+            image: '../images/mobile-app-development.webp',
         },
         2: {
             title: 'UI/UX Design',
@@ -33,7 +39,7 @@ function ServicesDetails() {
         3: {
             title: 'Search Engine Optimization (SEO)',
             description: 'Imanje Solutions offers ethical, user-centered SEO that boosts visibility, enhances accessibility, and drives meaningful engagement. We optimize structure, speed, and content to empower users and elevate brands—without gimmicks or shortcuts.',
-            image: '../images/seo-optimization.webp',
+            image: '../images/seo.webp',
         },
         4: {
             title: 'Digital Marketing',
@@ -62,19 +68,25 @@ function ServicesDetails() {
                 <title>Service Details - Imanje Solutions</title>
                 <meta name="description" content={`Details about service ${id}`} />
             </Helmet>
-            <Row>
-                <Col>
-                    <img
-                    src={serviceDetails[id].image}
-                    alt={service.title}
-                    className={`img-fluid ${loaded ? 'slide-in' : ''}`}
+            <Row className="gy-4 align-items-flex-start">
+                <Col xs={12} md={6}>
+                    <div className="detail-image-wrapper">
+                        <img
+                            src={serviceDetails[id].image}
+                            alt={service.title}
+                            className={`img-fluid ${loaded ? 'slide-in' : ''}`}
                     />
+                </div>
+                </Col>
+                <Col xs={12} md={6} className="detail-text">
                     <h1>{serviceDetails[id].title}</h1>
                     <p>{serviceDetails[id].description}</p>
-                    <button className="cta-button" href="tel:+14702612528">Let's Build Something Great</button>
-                    <Link to="/services" className="btn btn-primary">
-                        Back to Services
-                    </Link>
+                    <div className="details-button-wrapper">
+                        <a className="cta-button" href="tel:+14702612528">Let's Build Something Great</a>
+                        <Link to="/services" className="btn btn-primary">
+                            Back to Services
+                        </Link>
+                    </div>
                 </Col>
             </Row>
         </Container>
