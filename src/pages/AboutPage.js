@@ -34,6 +34,13 @@ function AboutPage() {
                     </div>
                 </Col>
             </Row>
+            <Row className="my-4">
+                <Col></Col>
+                <Col className="text-center">
+                    <a href="/contact" className="contact-button">Contact Us</a>
+                </Col>
+                <Col></Col>
+            </Row>
         </Container>
     );
 }

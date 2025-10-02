@@ -10,10 +10,8 @@
     align-items: center;
     justify-content: flex-start;
     width: 100%;
-     min-height: 100vh;
-      padding-top: 60px; /* Adjust based on ContactBar height */
-
-
+     min-height: 77vh;
+      padding-top: 0px; /* Adjust based on ContactBar height */
 }
 .about-container h1{
     font-size: 2.5rem;
@@ -38,4 +36,28 @@
   height: 178px;
   border-radius: 8px;
 }
+.contact-button {
+  display: inline-block;
+  padding: 10px 44px;
+  width: 181px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  color: #d9d9d9;
+  background-color: #021126;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 4px 6px rgba(217, 217, 217, 1);
+  transition: background-color 0.3s ease;
+}
 
+@media screen and (max-width: 768px) {
+  .team-image {
+    width: 100%;
+    height: auto;
+    /* max-width: 700px; */
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+  
+}
