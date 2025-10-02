@@ -7,6 +7,7 @@ import ContactForm from '../components/ContactForm';
 
 function ContactUsPage() {
   return (
+    <div className="contact-page-wrapper">
     <Container className="contact-container">
       <Helmet>
         <title>Contact Us - Imanje Solutions</title>
@@ -25,28 +26,11 @@ function ContactUsPage() {
           </div>
           <div className="form-container mb-4">
              <ContactForm />
-
-          {/* <Form>
-            <Form.Group controlId="formName">
-              <Form.Label>Name</Form.Label>
-              <Form.Control type="text" placeholder="Enter your name" />
-            </Form.Group>
-            <Form.Group controlId="formEmail">
-              <Form.Label>Email</Form.Label>
-              <Form.Control type="email" placeholder="Enter your email" />
-            </Form.Group>
-            <Form.Group controlId="formMessage">
-              <Form.Label>Message</Form.Label>
-              <Form.Control as="textarea" rows={5} placeholder="Enter your message" />
-            </Form.Group>
-            <Button variant="primary" type="submit" className="submit-button">
-              Submit
-            </Button>
-          </Form> */}
           </div>
         </Col>
       </Row>
     </Container>
+    </div>
   );
 }
 

@@ -33,7 +33,7 @@ function PortfolioPage() {
         {projects.map((project, index) => (
           <Col key={index} md={4}>
             <Card>
-              <Card.Img variant="top" src={project.image} className="design-img" />
+              <Card.Img  src={project.image} className="design-img" />
               <Card.Body>
                 <Card.Title>{project.title}</Card.Title>
                 <Card.Text>{project.description}</Card.Text>
